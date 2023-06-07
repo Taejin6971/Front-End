@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img 태그 사용</title>
+</head>
+
+<body>
+    <!-- 
+        img : 이지를 웹 브라우저에 적용하는 태그, 인라인 태그
+        src : 이미지를 등록하는 경로 설정 (절대경로, 상대경로(권장))
+            - 대소문자 주의
+        width   : 넓이를 지정하는 속성
+        height  : 높이를 지정하는 속성
+        alt     : 이미지가 출력되지 않을때 표시되는 속성
+        title   : 이미지에 마우스를 올렸을때 설명을 출력
+
+        p, div <== 블락으로 처리되는 태그
+     -->
+
+    <h3>이미지 등록 img (인라인으로 처리)</h3>
+    <hr color="green">
+
+    <img src="../img/image1.jpg" width="200px" height="200px" alt="자전거타는 모습" title="자전거">
+    <img src="../img/image2.jpg" width="200px" height="200px" alt="비행기" title="비행기">
+    <img src="../img/image3.jpg" width="200px" height="200px" alt="수상보드" title="수상보드">
+    <img src="../img/image4.jpg" width="200px" height="200px" alt="자동차" title="자동차">
+    <img src="../img/image5.jpg" width="200px" height="200px" alt="무당벌레" title="무당벌레">
+
+    <p />
+
+    <h3>이미지 등록 img (인라인으로 처리) - 링크 걸기</h3>
+    <hr color="green">
+
+    <a href="https://www.google.com" target="_blank">
+        <img src="../img/image1.jpg" width="200px" height="200px" alt="자전거타는 모습">
+    </a>
+    <a href="https://www.naver.com" target="_self">
+        <img src="../img/image2.jpg" width="200px" height="200px" alt="비행기">
+    </a>
+    <a href="../index.html">
+        <img src="../img/image3.jpg" width="200px" height="200px" alt="수상보드">
+    </a>
+    <a href="../02/ul_ol_tag.html" target="_self">
+        <img src="../img/image4.jpg" width="200px" height="200px" alt="자동차">
+    </a>
+    <a href="../02/profile.html">
+        <img src="../img/image5.jpg" width="200px" height="200px" alt="무당벌레">
+    </a>
+
+    <p />
+
+    <h3>이미지 등록 img (블락으로 처리) - 링크 걸기</h3>
+    <hr color="green">
+
+    <div>
+        <a href="https://www.google.com" target="_blank">
+            <img src="../img/image1.jpg" width="200px" height="200px" alt="자전거타는 모습">
+        </a>
+    </div>
+    <div>
+        <a href="https://www.naver.com" target="_self">
+            <img src="../img/image2.jpg" width="200px" height="200px" alt="비행기">
+        </a>
+    </div>
+    <div>
+        <a href="../index.html">
+            <img src="../img/image3.jpg" width="200px" height="200px" alt="수상보드">
+        </a>
+    </div>
+    <div>
+        <a href="../02/ul_ol_tag.html" target="_self">
+            <img src="../img/image4.jpg" width="200px" height="200px" alt="자동차">
+        </a>
+    </div>
+    <div>
+        <a href="../02/profile.html">
+            <img src="../img/image5.jpg" width="200px" height="200px" alt="무당벌레">
+        </a>
+    </div>
+
+    <p />
+
+    <h3>이미지 등록 img (테이블로 처리) - 링크 걸기</h3>
+    <hr color="green">
+
+    <!-- table에 border없이 레이아웃 처리 -->
+    <table>
+        <tr>
+            <td>
+                <a href="https://www.google.com" target="_blank">
+                    <img src="../img/image1.jpg" width="200px" height="200px" alt="자전거타는 모습">
+                </a>
+            </td>
+            <td>
+                <a href="https://www.naver.com" target="_self">
+                    <img src="../img/image2.jpg" width="200px" height="200px" alt="비행기">
+                </a>
+            </td>
+            <td>
+                <a href="../index.html">
+                    <img src="../img/image3.jpg" width="200px" height="200px" alt="수상보드">
+                </a>
+            </td>
+            <td>
+                <a href="../02/ul_ol_tag.html" target="_self">
+                    <img src="../img/image4.jpg" width="200px" height="200px" alt="자동차">
+                </a>
+            </td>
+            <td>
+                <a href="../02/profile.html">
+                    <img src="../img/image5.jpg" width="200px" height="200px" alt="무당벌레">
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <p />
+
+    <h3>이미지 등록 img (테이블로 처리 - 블락으로 처리) - 링크 걸기</h3>
+    <hr color="green">
+
+    <table align="center">
+        <tr>
+            <td>
+                <a href="https://www.google.com" target="_blank">
+                    <img src="../img/image1.jpg" width="200px" height="200px" alt="자전거타는 모습">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://www.naver.com" target="_self">
+                    <img src="../img/image2.jpg" width="200px" height="200px" alt="비행기">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="../index.html">
+                    <img src="../img/image3.jpg" width="200px" height="200px" alt="수상보드">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="../02/ul_ol_tag.html" target="_self">
+                    <img src="../img/image4.jpg" width="200px" height="200px" alt="자동차">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="../02/profile.html">
+                    <img src="../img/image5.jpg" width="200px" height="200px" alt="무당벌레">
+                </a>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
