@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스크롤 메뉴 고정</title>
+
+    <style>
+        a {
+            /* 모든 페이지에서 처리 : 외부 파일로 저장 후 사용 */
+            text-decoration: none;
+            /* 기본 blue ==> white */
+            color: white;
+        }
+
+        div {
+            /* div 박스안의 글자 정렬: flex*/
+            display: flex;
+            /* flex로 수평정렬 */
+            justify-content: center;
+            /* flex로 수직정렬 */
+            align-items: center;
+
+            /* 완료시 제거 선 */
+            border: 1px solid red;
+            width: 80px;
+            height: 50px;
+            /* 연한 빨강 */
+            background-color: #ff8080;
+            color: white;
+
+            /* 페이지의 스크롤과 상관없이 포지션 유지: position: fixed */
+            position: fixed;
+            left: 10px;
+
+            transition: 0.3s;
+        }
+
+        #scroll {
+            height: 3000px;
+            background-color: white;
+            top: 300px;
+        }
+
+        #div1 {
+            top: 50px;
+        }
+
+        #div2 {
+            top: 100px;
+        }
+
+        #div3 {
+            top: 150px;
+        }
+
+        #div4 {
+            top: 200px;
+        }
+
+        #div5 {
+            top: 250px;
+        }
+
+        div:hover {
+            width: 200px;
+            transition-timing-function: linear;
+            background-color: red;
+            color: white;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        스크롤을 내리더라도 움직이지않는 메뉴
+        position: fixed
+
+        링크: text-decoration: none (링크 밑줄 제거)
+        href="#" : 링크의 URL을 #으로 처리해서 링크는 걸렸지만 작동되지않도록 처리
+    -->
+    <div id="div1"><a href="#">HOME</a></div>
+    <div id="div2"><a href="#">ABOUT</a></div>
+    <div id="div3"><a href="#">NEWS</a></div>
+    <div id="div4"><a href="#">STUDY</a></div>
+    <div id="div5"><a href="#">CONTACT</a></div>
+
+    <div id="scroll">스크롤 무한 내리기</div>
+</body>
+
+</html>
