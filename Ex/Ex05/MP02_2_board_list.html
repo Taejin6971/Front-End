@@ -13,6 +13,13 @@
             /* border: 1px solid red; */
         }
 
+        table,
+        tr,
+        th,
+        td {
+            border-collapse: collapse;
+        }
+
         ul {
             list-style-type: none;
         }
@@ -85,7 +92,7 @@
         #서브메뉴 li {
             font-size: 15px;
             position: absolute;
-            margin:90px 0 0 40px;
+            margin: 90px 0 0 40px;
         }
 
         #서브베너 {
@@ -102,6 +109,23 @@
 
         main>#main_img {
             margin-top: 10px;
+        }
+
+        #선택 {
+            position: absolute;
+            margin-left: 380px;
+            margin-top: -20px;
+            float: left;
+        }
+
+        #게시판표 {
+            margin-top: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        #첫줄 {
+            background-color: rgb(180, 180, 180);
         }
 
         #흑백로고 {
@@ -174,13 +198,71 @@
             <div id="main_img">
                 <img src="img/comm.gif">
             </div>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
+            <div>
+                <h2>자유 게시판</h2>
+                <hr>
+                <div>
+                    <div>▷ 총 5개의 게시물이 있습니다.</div>
+                    <div id="선택">
+                        <img src="img/select_search.gif">
+                        <select name="제목">
+                            <option value="제목">
+                                제목
+                            </option>
+                            <input type="text">
+                            <img src="img/search_button.gif">
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <table id="게시판표">
+                        <tr id="첫줄">
+                            <th id="게시판번호">번호</th>
+                            <th id="게시판제목">제목</th>
+                            <th id="게시판글쓴이">글쓴이</th>
+                            <th id="게시판일시">일시</th>
+                            <th id="게시판조회">조회</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="MP02_3_board_view.html">
+                                    까스릉님의 선물인 보드카가 정말 독하네요!!!
+                                </a></td>
+                            <td>루바토</td>
+                            <td>2017-09-20</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                까스릉님의 선물인 보드카가 정말 독하네요!!!
+                                </a></td>
+                            <td>루바토</td>
+                            <td>2017-09-20</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                까스릉님의 선물인 보드카가 정말 독하네요!!!
+                                </a></td>
+                            <td>루바토</td>
+                            <td>2017-09-20</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                ◀ 이전 1 다음 ▶
+                            </td>
+                            <td colspan="2">
+                                <img src="img/list.png">
+                                <a href="MP02_4_board_write.html">
+                                    <img src="img/write.png"></a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </main>
         <div class="clear"></div>
         <hr>
