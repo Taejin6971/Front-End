@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* border: 1px solid red; */
+        }
+
+        body>div {
+            width: 1000px;
+            margin: auto;
+        }
+
+        header {
+            position: relative;
+        }
+
+        #login {
+            position: absolute;
+            top: 10px;
+            left: 770px;
+        }
+
+        #menu {
+            position: absolute;
+            background-image: url(img/main_menu_bg.png);
+            top: 40px;
+            left: 210px;
+        }
+
+        #menu li {
+            display: inline-block;
+            margin: 12px 30px 0 50px;
+            font-size: 13px;
+            height: 25px;
+        }
+
+        aside {
+            width: 200px;
+            height: 400px;
+            float: left;
+        }
+
+        aside>article {
+            background-color: #e0e0e0;
+            /* height: 200px; */
+            border-radius: 15px;
+            margin: 10px;
+        }
+
+        aside>article>#ttl_login {
+            width: 120px;
+            margin: 10px 0 0 10px;
+        }
+
+        aside>article>#btn_login {
+            margin: 10px 0 0 0;
+            border-radius: 10px;
+        }
+
+        aside>article>#nbsp {
+            background-color: white;
+            margin: 5px;
+            width: 100px;
+            float: left;
+        }
+
+        aside>article>b {
+            margin-left: 20px;
+        }
+
+        aside>article>ul {
+            font-size: 12px;
+            margin-left: 25px;
+        }
+
+        main {
+            width: 800px;
+            height: 600px;
+            margin-left: 200px;
+        }
+
+        main>#main_img {
+            margin-top: 10px;
+        }
+
+        #공지사항,
+        #자유게시판,
+        #동영상 {
+            width: 350px;
+            height: 100px;
+            float: left;
+            margin: 10px;
+        }
+
+        #공지북팬,
+        #자유북팬 {
+            float: left;
+        }
+
+        #공지내용,
+        #공지날짜,
+        #자유내용,
+        #자유날짜 {
+            font-size: 10px;
+            float: left;
+            margin-right: 25px;
+        }
+
+        #동영상사진 {
+            width: 300px;
+            margin-left: 25px;
+        }
+
+        #more {
+            position: absolute;
+            margin-left: 210px;
+        }
+
+        #묶음 {
+            height: 280px;
+        }
+
+        #포토갤러리 {
+            border: 1px solid rgb(143, 143, 143);
+            height: 200px;
+            width: 750px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #연주사진 {
+            float: left;
+            margin: 30px;
+        }
+
+        #흑백로고 {
+            float: left;
+            margin-left: 200px;
+        }
+
+        #회사정보 {
+            float: left;
+            margin-left: 50px;
+            font-size: 13px;
+        }
+
+        #sns {
+            margin-left: 900px;
+        }
+
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<div class="clear"></div>
+
+<body>
+    <div>
+        <header>
+            <img src="img/logo.png">
+            <nav id="login">
+                HOME|LOGIN|JOIN|NOTICE
+            </nav>
+            <nav id="menu">
+                <ul>
+                    <li><a href="MP02_2_board_list.html">자유 게식판</a></li>
+                    <li>기타 연주</li>
+                    <li>공동 구매</li>
+                    <li>연주회 안내</li>
+                    <li>회원 게시판</li>
+                </ul>
+            </nav>
+        </header>
+        <aside>
+            <article id="로그인">
+                <img id="ttl_login" src="img/ttl_login.png">
+                <div id="nbsp">&nbsp;</div>
+                <div id="nbsp">&nbsp;</div>
+                <img id="btn_login" src="img/btn_login.gif">
+                <div class="clear"></div>
+                <div>
+                    <img id="btn_join" src="img/btn_join.gif">
+                    <img id="btn_search" src="img/btn_search.gif">
+                </div>
+            </article>
+            <article>
+                <b>방명록</b>
+                <hr>
+                <ul>
+                    <li>안녕하세요!</li>
+                    <li>안녕하세요!</li>
+                    <li>안녕하세요!</li>
+                    <li>안녕하세요!</li>
+                </ul>
+            </article>
+        </aside>
+        <main>
+            <div id="main_img">
+                <img src="img/main_img.png">
+            </div>
+            <div id="묶음">
+                <div id="공지사항">
+                    <img src="img/latest1.gif">
+                    <img id="more" src="img/more.gif">
+                    <hr>
+                    <img id="공지북팬" src="img/book_pen.gif">
+                    <div id="공지내용">
+                        루바토 개편과 사이트 이용... <br>
+                        루바토 개편과 사이트 이용... <br>
+                        루바토 개편과 사이트 이용... <br>
+                        루바토 개편과 사이트 이용...
+                    </div>
+                    <div id="공지날짜">
+                        2017-09-20 <br>
+                        2017-09-20 <br>
+                        2017-09-20 <br>
+                        2017-09-20
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div id="동영상">
+                    <img src="img/latest3.gif">
+                    <img id="more" src="img/more.gif">
+                    <hr>
+                    <img id="동영상사진" src="img/bach.jpg">
+                    <div class="clear"></div>
+                </div>
+                <div id="자유게시판">
+                    <img src="img/latest2.gif">
+                    <img id="more" src="img/more.gif">
+                    <hr>
+                    <img id="자유북팬" src="img/book_pen.gif">
+                    <div id="자유내용">
+                        까스릉님의 선물인 보드카... <br>
+                        까스릉님의 선물인 보드카... <br>
+                        까스릉님의 선물인 보드카... <br>
+                        까스릉님의 선물인 보드카... <br>
+                    </div>
+                    <div id="자유날짜">
+                        2017-09-20 <br>
+                        2017-09-20 <br>
+                        2017-09-20 <br>
+                        2017-09-20
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="img/latest4.gif" alt="">
+                <div id="포토갤러리">
+                    <div id="연주사진">
+                        <div><img src="img/img1.jpg"></div>
+                        <div>기타페스티벌4중주</div>
+                    </div>
+                    <div id="연주사진">
+                        <div><img src="img/img1.jpg"></div>
+                        <div>기타페스티벌4중주</div>
+                    </div>
+                    <div id="연주사진">
+                        <div><img src="img/img1.jpg"></div>
+                        <div>기타페스티벌4중주</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="clear"></div>
+        <hr>
+        <footer>
+            <img id="흑백로고" src="img/logo_footer.gif">
+            <div id="회사정보">
+                서울시 강남구 삼성동 1234 우 :123-1234 <br>
+                TEL : 031-123-1234 Email : email@domain.com <br>
+                COPYRIGHT (C) 루바토 ALL RIGHTS RESERVED
+            </div>
+            <div id="sns">
+                <img src="img/facebook.gif">
+                <img src="img/blog.gif">
+                <img src="img/twitter.gif">
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

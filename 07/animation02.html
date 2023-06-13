@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션2</title>
+
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation: colorbox 10s infinite alternate;
+        }
+
+        @keyframes colorbox {
+            from {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: orange;
+                left: 300px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: yellow;
+                left: 300px;
+                top: 300px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 300px;
+            }
+
+            to {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 키프레임을 여러개로 설정 -->
+    <div>div 박스</div>
+</body>
+
+</html>

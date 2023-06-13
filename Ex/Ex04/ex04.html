@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex04</title>
+
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+            border: 1px dotted red;
+        } */
+
+        body>div {
+            width: 1020px;
+            margin: auto;
+        }
+
+        header {
+            /* border: 1px solid red; */
+        }
+
+        main {
+            /* border: 1px solid red; */
+        }
+
+        #menu>img {
+            width: 200px;
+            float: left;
+        }
+
+        #banner>img {
+            width: 340px;
+            height: 120px;
+            float: left;
+        }
+
+        article>div {
+            float: left;
+            margin: 10px;
+        }
+
+        hr+section {
+            margin: 20px;
+            height: 150px;
+        }
+
+        #info {
+            float: left;
+        }
+
+        #info>ul {
+            font-size: 15px;
+            color: rgb(105, 105, 105);
+        }
+
+        footer {
+            /* border: 1px solid red; */
+        }
+
+        footer>article {
+            float: left;
+        }
+
+        #new>div {
+            color: rgb(105, 105, 105);
+            float: left;
+            margin: 20px;
+        }
+
+        .clear {
+            /* left, right 정렬된 내용을 취소 */
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+            <logo><img src="img/logo.gif"></logo>
+            <moto><img src="img/moto.gif"></moto>
+            <hr>
+            <div>
+                <nav id="menu"><img src="img/menu01.gif"></nav>
+                <nav id="menu"><img src="img/menu02.gif"></nav>
+                <nav id="menu"><img src="img/menu03.gif"></nav>
+                <nav id="menu"><img src="img/menu04.gif"></nav>
+                <nav id="menu"><img src="img/menu05.gif"></nav>
+            </div>
+            <div class="clear"></div>
+        </header>
+
+        <main>
+            <section>
+                <article id="banner"><img src="img/banner01.gif"></article>
+                <article id="banner"><img src="img/banner02.gif"></article>
+                <article id="banner"><img src="img/banner03.gif"></article>
+            </section>
+            <div class="clear"></div>
+
+            <article id="customer">
+                <div>
+                    <img src="img/title_customer.gif">
+                    <img src="img/more.gif">
+                    <br>
+                    <img src="img/customer_phone.gif" alt="">
+                </div>
+            </article>
+            <article>
+                <div id="new">
+                    <img src="img/title_notice.gif">
+                    <img src="img/more.gif">
+                    <br>
+                    <div>
+                        새로운 상품의 술시를 알려드립니다.<br>
+                        새로운 상품의 술시를 알려드립니다.<br>
+                        새로운 상품의 술시를 알려드립니다.<br>
+                        새로운 상품의 술시를 알려드립니다.
+                    </div>
+                    <div>
+                        2014-03-03 <br>
+                        2014-03-03 <br>
+                        2014-03-03 <br>
+                        2014-03-03 <br>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <img src="img/faq.gif">
+                    <br>
+                    <img src="img/cal.gif">
+                </div>
+            </article>
+            <div class="clear"></div>
+            <hr>
+            <section>
+                <article id="info">
+                    <ul>손해보험 상식
+                        <li>손해보험이란?</li>
+                        <li>나에게 필요한 보험은?</li>
+                        <li>보험약관의 중요성</li>
+                        <li>손해보험의 특징</li>
+                    </ul>
+                </article>
+                <article id="info">
+                    <ul>루바토 보험의 장점
+                        <li>보험료 저렴</li>
+                        <li>신속한 처리 및 보상</li>
+                        <li>만기 시 원리금 보장</li>
+                    </ul>
+                </article>
+                <article id="info">
+                    <ul>고객센터
+                        <li>전국 지점 안내</li>
+                        <li>손해배상 안내</li>
+                        <li>손해보험 FAQ</li>
+                        <li>질문과 답변</li>
+                    </ul>
+                </article>
+                <article id="info">
+                    <ul>마이페이지
+                        <li>계약 조회/변경</li>
+                        <li>보험 계약 갱신</li>
+                        <li>보험료 납입</li>
+                        <li>증명서 발급</li>
+                    </ul>
+                </article>
+                <article id="info">
+                    <ul>가입 안내
+                        <li>공인인증센터</li>
+                        <li>인증서 발급/갱신</li>
+                        <li>인증서 폐기</li>
+                        <li>웹 로그인</li>
+                    </ul>
+                </article>
+                <article id="info">
+                    <ul>회사소개
+                        <li>기업소개</li>
+                        <li>찾아옹시는 길</li>
+                    </ul>
+                </article>
+            </section>
+            <hr style="border: 3px solid #00a995;">
+        </main>
+
+        <footer>
+            <article>
+                <img src="img/address.gif">
+            </article>
+            <article id="info2">
+                <img src="img/phonenum.gif">
+                <br>
+                <img src="img/f.gif">
+                <img src="img/b.gif">
+                <img src="img/t.gif">
+            </article>
+        </footer>
+    </div>
+</body>
+
+</html>
