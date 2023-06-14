@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* body {
+            font-family: "맑은 고딕", "돋움";
+            font-size: 12px;
+            color: #444444;
+        } */
+
+        .clear {
+            clear: both;
+        }
+
+        .c3 {
+            width: 25%;
+            float: left;
+        }
+
+        .c12 {
+            width: 100%;
+            float: left;
+        }
+
+        @media only screen and (max-width: 600px) {
+            header div.c3 {
+                width: 100%;
+            }
+        }
+
+        header h1 {
+            background-color: blue;
+            color: white;
+            height: 100px;
+            padding: 20px;
+            font-size: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header div {
+            background-color: rgb(210, 167, 254);
+        }
+
+        header div div {
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main div {
+            background-color: rgb(220, 220, 220);
+            height: 400px;
+        }
+
+        main div h1 {
+            padding: 50px;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid rgb(163, 163, 163);
+        }
+
+        main div section table {
+            margin: auto;
+            width: 600px;
+        }
+
+        main div section table tr td input{
+            border-radius: 3px;
+        }
+
+        main div section table tr#button {
+            text-align: center;
+        }
+
+        footer div {
+            background: linear-gradient(90deg, blue, rgb(185, 185, 255));
+            color: white;
+            padding: 30px;
+            font-size: 22px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="c12">
+        <h1>쇼핑몰 회원관리 VER 1.0</h1>
+        <nav>
+            <div>
+                <div class="c3">회원등록</div>
+                <div class="c3">회원목록조회/수정</div>
+                <div class="c3">회원매출조회</div>
+                <div class="c3">홈으로</div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="c12">
+        <div>
+            <h1>쇼핑몰 회원등록</h1>
+            <section>
+                <table>
+                    <tr>
+                        <th>회원번호(자동발생)</th>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th>회원성명</th>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th>회원주소</th>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th>가입일자</th>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th>고객등급[A:VIP, B:일반, C:직원]</th>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th>도시코드</th>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr id="button">
+                        <td colspan="2">
+                            <input type="button" value="등록">
+                            <input type="button" value="조회">
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <footer class="c12">
+        <div>
+            HRDKOREA Copyright@2016 all rights reserve. Human Resources Development Serivce of Korea
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            /* 600px ~ 900px 초록색 */
+            background-color: #00ff0070;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                /* 0px ~ 600px 노란색 */
+                background-color: #ffff0070;
+            }
+        }
+
+        @media only screen and (min-width: 900px) {
+            body {
+                /* 900px ~  빨간색*/
+                background-color: #ff000070;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        미디어 쿼리: 브라우져의 width에 따라 css를 다르게 작동
+        max-width: 처음 ~ max-width 까지 스타일이 적용
+        min-width: min-width 이후부터 스타일이 적용
+    -->
+</body>
+
+</html>
