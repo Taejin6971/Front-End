@@ -71,7 +71,7 @@
 
         aside ul li {
             border-bottom: 1px solid gray;
-            padding: 5px 0 6px 15px;
+            padding: 5px 0 7px 15px;
         }
 
         main {
@@ -96,6 +96,7 @@
             background: url(img/week_event.gif) no-repeat;
             margin-left: 720px;
             height: 200px;
+            margin-top: 10px;
         }
 
         main #week_event_img {
@@ -103,25 +104,26 @@
         }
 
         main #special_shop {
-            position: absolute;
-            padding-left: 20px;
-            width: 550px;
+            background: url(img/special_shop.gif) no-repeat;
+            float: left;
+            background-size: 540px 390px;
+            width: 600px;
+            height: 400px;
+            margin-left: 20px;
+        }
+
+        main #special_img_box {
+            margin: 70px 0 0 30px;
         }
 
         main #special_img1 {
-            position: absolute;
             border: 1px solid rgb(190, 190, 190);
             padding: 10px;
-            margin: 70px 0 0 50px;
-            width: 220px;
         }
 
         main #special_img2 {
-            position: absolute;
             border: 1px solid rgb(190, 190, 190);
             padding: 10px;
-            margin: 70px 0 0 300px;
-            width: 220px;
         }
 
         main #landscape {
@@ -288,10 +290,11 @@
             </div>
 
             <div>
-                <div>
-                    <img id="special_shop" src="img/special_shop.gif">
-                    <div><img id="special_img1" src="img/special_img1.gif"></div>
-                    <div><img id="special_img2" src="img/special_img2.gif"></div>
+                <div id="special_shop">
+                    <div id="special_img_box">
+                        <img id="special_img1" src="img/special_img1.gif">
+                        <img id="special_img2" src="img/special_img2.gif">
+                    </div>
                 </div>
 
                 <div>
