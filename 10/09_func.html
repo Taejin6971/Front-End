@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function add(x, y, z) {
+            document.write("x : " + x + ", y : " + y + ", z : " + z + "<br>");
+
+            // 조건을 처리해서 인풋이 1개일때 처리
+            if ((y === undefined) && (z === undefined)) {
+                sum = x;
+            } else if (z === undefined) { // 조건을 처리해서 인풋이 2개일때 처리
+                sum = x + y;
+            } else { // 조건을 처리해서 인풋이 3개일때 처리
+                sum = x + y + z;
+            }
+            return sum;
+        }
+
+        add(1);             // x : 1, y : undefined, z : undefined
+        add(2, 3);          // x : 2, y : 3, z : undefined
+        add(4, 5, 6);       // x : 4, y : 5, z : 6
+        add(7, 8, 9, 10);   // x : 7, y : 8, z : 9
+
+        document.write("<hr>")
+
+        var r1 = add(1);
+        var r2 = add(2, 3);
+        var r3 = add(4, 5, 6);
+
+        document.write("함수 인자 1개 : " + r1 + "<br>");
+        document.write("함수 인자 2개 : " + r2 + "<br>");
+        document.write("함수 인자 3개 : " + r3 + "<br>");
+    </script>
+</head>
+
+<body>
+    <!--
+        함수에 매개변수가 적게 들어오는 경우 처리
+        undefined   매개변수가 인풋이 되지 않는 경우: undefined가 적용됨
+        ===     : 값과 타입이 적확하게 일치하는 경우
+        ==      : 값만 일치 하는 경우 (타입은 체크하지 않음)
+
+        Java: 메소드 호출시 인자 3개를 넣으면 해당 메소드가 존재해야 한다.
+        Javascript: 매개변수 3개인 함수에 1개의 인자만 넣어도 작동된다.
+    -->
+</body>
+
+</html>
