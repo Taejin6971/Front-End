@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var arrdata = [];
+
+        function insertArr() {
+            for (var i = 0; i < 100; i++) {
+                arrdata[i] = i + 1;
+                document.write(arrdata[i] + " ");
+            }
+        }
+
+        function delArr() {
+            for (var i = 0; i < arrdata.length; i++) {
+                if (i % 2 == 0) {
+                    arrdata[i] = 0;
+                }
+                continue;
+            }
+            selectArr();
+        }
+
+        function selectArr() {
+            for (var i = 0; i < arrdata.length; i++) {
+                document.write(arrdata[i] + " ");
+            }
+            document.write("<p>홀수 번째 데이터 초기화 완료!" + "</p>");
+            document.write("<a href='22_arr.html'>돌아가기</a>");
+        }
+
+        insertArr();
+    </script>
+</head>
+
+<body>
+    <p />
+    <button type="button" onclick="delArr()">배열의 홀수 번째 데이터 초기화</button>
+</body>
+
+</html>
