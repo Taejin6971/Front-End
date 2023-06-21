@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var data = [10, 20, 30, 40, 30, 60, 70, 30, 90, 100];
+
+        document.write("원본 데이터 : " + data + "<p>")
+        document.write("첫방부터 검색 데이터 : " + data.indexOf(30) + "<p>") // 2
+        document.write("마지막방부터 검색 데이터 : " + data.lastIndexOf(30) + "<p>") // 7
+
+        // index 3 번방 이후부터 30을 검색해서 출력되는 방번호
+        document.write("3번방 이후부터 검색 데이터 : " + data.indexOf(30, 3) + "<p>") // 4 
+        document.write("원본 데이터 : " + data.indexOf(300) + "<p>") // -1 : 배열의 값이 검색되지 않을경우
+    </script>
+</head>
+
+<body>
+    <!--
+        배열에 들어간 값의 방 번호를 알려준다
+
+        indexOf     : 처음 방에서 오른쪽으로 검색해서 방 번호를 알려줌.
+        lastindexOf : 마지막 방에서 왼쪽으로 검색해서 방 번호를 알려줌.
+    -->
+</body>
+
+</html>

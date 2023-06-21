@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="carname"></p>
+    <p id="carcolor"></p>
+    <p id="carspeed"></p>
+
+    <script>
+        var car = {
+            name: "Sonata",
+            speed: 50,
+            color: "white",
+            start: function () {
+                return this.speed + 10;
+            }
+        };
+
+        // 앨리먼트를 객체화 해서 사용
+        var cname = document.getElementById("carname");
+        var ccolor = document.getElementById("carcolor");
+        var cspeed = document.getElementById("carspeed");
+
+        cname.innerHTML = car.name;
+        ccolor.innerHTML = car.color;
+        cspeed.innerHTML = car.start();
+    </script>
+</body>
+
+</html>

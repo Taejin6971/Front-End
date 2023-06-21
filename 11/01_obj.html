@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // 함수 정의
+    </script>
+</head>
+
+<body>
+    <!--
+        document.write : body 내의 모든 태그를 삭제후 출력
+
+        innerHTML   : 특정 Element 블락 내부에 값을 넣는다.
+        textContent : 특정 Element 블락에 문자를 넣는다.
+    -->
+
+    <p id="val1" style="background-color: yellow;"></p>
+    <p id="val2" style="background-color: yellowgreen;"></p>
+    <p id="val3" style="background-color: green;"></p>
+
+    <script>
+        // body 블락 마지막전에 Javascript
+        // 사용자가 정의한 객체 생성 : car
+        var car = {         // 객체 : 속성 (필드), 기능 (함수)
+            name: "Sonata",
+            speed: 100,
+            color: "white"
+        };
+
+        document.getElementById("val1").innerHTML = "자동차 이름 : " + car["name"];
+        document.getElementById("val2").innerHTML = "자동차 속도 : " + car.speed;
+        document.getElementById("val3").innerHTML = "자동차 색상 : " + car.color;
+    </script>
+</body>
+
+</html>
