@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("button.move").click(function () {
+                $("img").animate({
+                    height: '300px',
+                    width: '350px',
+                    left: '300px'
+                });
+            });
+            $("button.init").click(function () {
+                $("img").animate({
+                    height: '100px',
+                    width: '130px',
+                    left: '0px'
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button class="move">확대</button>
+    <button class="init">축소</button>
+    <p />
+    <img name="pic1" src="img/pic1.jpg" width="130" height="100" style="position:relative">
+</body>
+
+</html>

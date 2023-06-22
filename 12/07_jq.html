@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+
+    <style>
+        /* JQuery를 사용해서 body내의 엘리맨트에 적용 */
+        .important {
+            font-weight: bold;
+            font-size: xx-large;
+        }
+
+        .blue {
+            color: blue;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $("button.add").click(function () {
+                $("h1, h2, p").addClass("blue");
+                $("div").addClass("important");
+            });
+            $("button.remove").click(function () {
+                $("h1, h2, p").removeClass("blue");
+                $("div").removeClass("important");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>HTML5</h1>
+    <h2>CSS3</h2>
+    <p>JavaScript</p>
+    <div>JQuery</div>
+    <button class="add">CSS 적용</button>
+    <button class="remove">CSS 적용 해제</button>
+
+    <!--
+        JQuery 에서 CSS 컨트롤
+            - addClass()    : 요소(element)에 class를 추가
+            - removeClass() : 요소(element)에 class를 제거함
+
+            - toggleClass() : 요소에 class를 추가/제거 를 계속 반복함.
+            - css()     : 선택한 요소의 스타일 속성을 설정하거나 반환한다.
+            - width()   : 가로 크기를 반환 (마진, 패딩, 경계(볼더) 제외)
+            - hright()  : 세로 크기를 반환 (마진, 패딩, 경계(볼더) 제외)
+    -->
+</body>
+
+</html>
